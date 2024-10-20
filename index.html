@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>모든게 잘될거야</title>
+    <style>
+        @font-face {
+            font-family: 'HakgyoansimByeolbichhaneulTTF-B';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimByeolbichhaneulTTF-B.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+        body {
+            font-family: 'HakgyoansimByeolbichhaneulTTF-B', sans-serif;
+        }
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <form class="hidden"id="login-form">
+        <h3>이름을 입력해주세요.</h3>
+        <input class="loginbox" required maxlength="15" type="text"/>
+    </form>
+    <h1 class="hidden" id="greeting"></h1>
+    <div>
+        <h3 id="date"></h3>
+        <h2 id="clock"> 00:00 </h2>
+    </div>        
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <div id="todo-container" class="hidden">
+        <form id="todo-form">
+            <input type="text" placeholder="할 일을 적고 엔터" required />
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+    <canvas id="starCanvas"></canvas>
+    <img class="mainstar" src="img/star1.png">
+    <img class="mainstarback" src="img/star2.png">
+    <img src="img/sky1.jpg">
+
+    <script src="./js/background.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/star.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/weather.js"></script>
+    <!-- 이것저것 추가하고는 싶은데 시간이 부족했다... -->
+</body>
+</html>
